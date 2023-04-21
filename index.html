@@ -7,18 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-       name <input type="text">
+    
+       NAME  : <input type="text" id="name">
        <br>
        <button onclick="sawan();">clickme</button>
-    </form>
+       <h1 id="target"></h1>
+    
+    
+    
 <script>
 
-     function sawan() {document.write("");
+     function sawan() { 
+  var data = document.getElementById("name").value;
         
+        document.getElementById("target").innerHTML=data;
     }
 
-    sawan();
+    
     
 
     
